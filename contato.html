@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Rastros Ocultos - Contato</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+<body>
+    <header>
+        <a href="principal.html">
+            <img src="img/logo.png" alt="Logo Rastros Ocultos" class="logo">
+        </a>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Início</a></li>
+                <li><a href="casos.html">Casos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id = "contato">
+            <h2>Fale Conosco</h2>
+            <p>Tem alguma informação, teoria ou sugestão dos rastros? Envie sua mensagem!</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 90000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                </div>
+                <div class="termos">
+                    <input type="checkbox" id="aceite" name="aceite">
+                    <label for="aceite">
+                        Aceito receber outros conteúdos em meu WhatsApp e demais aplicativos de mensagem. 
+                        <a href="#">Termos e Condições</a>.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+   </main>
+    <footer class="footer">
+        <p class="footer-texto">&copy; 2025 Rastros Ocultos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

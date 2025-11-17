@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
+    color: #ddd;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
+    line-height: 1.6;
+    color:#ddd;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%, 
+        #330000 25%, 
+        #001133 50%, 
+        #330000 100%  
+    );
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+}
+
+header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 10px;
+    border-bottom: 3px solid #550000;
+}
+
+.logo {
+    display: block;
+    float: left;
+    width: 150px;
+}
+
+.logo:hover {
+    filter: brightness(1.3);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #8a0808;
+    margin: 5px 0;
+    text-shadow: 0 0 8px #e21a0079; 
+}
+
+nav ul li a {
+    color: #2463e0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd00;
+    text-shadow: 0 0 8px #ffdd00;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    padding: 35px 25px;
+    margin: 35px auto;
+    max-width: 1000px;
+    background: #111111;
+    border-radius: 12px;
+    border-left: 5px solid #550000;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00aaff;
+    text-shadow: 0 0 6px #00aaff;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #ff4141;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.casos-destaque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.caso {
+    background: #222222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    border: 2px solid #550000;
+}
+
+.caso:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.caso1:hover {
+    background: #001133;
+    box-shadow: 0 10px 20px rgba(0,170,255,0.6);
+}
+
+.caso2:hover {
+    background: #000000; 
+    box-shadow: 0 10px 20px rgb(76, 76, 78);
+}
+
+.caso3:hover {
+    background: #ad9a1aef;
+    box-shadow: 0 10px 20px rgb(255, 230, 0);
+}
+
+.caso h3 {
+    color: #9c0101;
+    margin-bottom: 10px;
+}
+
+.caso p {
+    color: #ddd;
+    font-size: 0.95em;
+}
+
+.saiba-mais a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #550000;
+    color: #a18c02;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.saiba-mais a:hover {
+    background-color: #b60202;
+    color: #eeea07; 
+    box-shadow: 0 6px 12px rgba(255,0,0,0.5);
+    transform: translateY(-2px);
+}
+
+.caso-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.imagem {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #550000;
+    display: block;
+    margin: 0 auto;
+}
+
+.ano { font-weight: bold; }
+.tipo-fenomeno { font-style: italic; }
+.acontecimento {}
+.testemunhas {}
+.desfecho { font-weight: bold; color: #640606; }
+
+.td1947 { color: #3a7ca8; }
+.td1977 { color: #3a7ca8; }
+.td1917 { color: #3a7ca8; }
+
+.tdmaritimo { color: rgb(100, 100, 100); }
+.tdpoltergeist { color: rgb(100, 100, 100); }
+.tdreligioso { color: rgb(100, 100, 100) }
+
+.tdmalaca, .tdlondres, .tdfatima { color: #003cff; }
+.tdtripulacao, .tdhodgson, .tdcriancas { color: #ffd000; }
+
+.tabela-caso {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+    background-color: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.tabela-caso th, .tabela-caso td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tabela-caso thead th {
+    background-color: #00153f;
+    color: #910000;
+    font-weight: bold;
+}
+
+.tabela-caso tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabela-caso.caso1 tbody tr:hover {
+    background-color: rgba(0, 170, 255, 0.89);
+}
+
+.tabela-caso.caso2 tbody tr:hover {
+    background-color: rgba(76, 68, 68, 0.3);
+}
+
+.tabela-caso.caso3 tbody tr:hover {
+    background-color: rgba(255, 230, 0, 0.2);
+}
+
+.curiosidades-caso {
+    list-style-type: square;
+    padding-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    font-size: 1em;
+}
+
+.curiosidades-caso li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #111111;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid #550000;
+}
+
+form label {
+    font-weight: bold;
+    color: #00aaff;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ff4444;
+    background: #222222;
+    color: #fff;
+    font-size: 1em;
+    width: 100%;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #ffdd00;
+    background: #333333;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ff4444;
+    background: #222222;
+    color: #fff;
+    font-size: 1em;
+    width: 100%;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #ffdd00;
+    background: #333333;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+    opacity: 1;
+    font-style: italic;
+}
+
+.termos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95em;
+    color: #ccc;
+}
+
+.termos input[type="checkbox"] {
+    width: auto;
+}
+
+.termos a {
+    color: #ffdd00;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.termos a:hover {
+    color: #ff4444;
+    text-shadow: 0 0 6px #ff4444;
+}
+
+
+form button {
+    padding: 12px;
+    background-color: #550000;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff0000;
+    transform: translateY(-2px);
+}
+
+.footer {
+    background-color: #001133;
+    text-align: center;
+    padding: 25px;
+    border-top: 4px solid #dfdb01c0;
+    font-size: 16px;
+}
+
+.footer-texto {
+    color: #a70303d5;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    section {
+        padding: 20px 15px;
+        margin: 20px 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .casos-destaque {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .casos-destaque .caso {
+        width: 90%;
+    }
+
+    .caso-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .imagem {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .tabela-caso {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        font-size: 0.85em;
+    }
+
+    .tabela-caso th, .tabela-caso td {
+        padding: 10px 8px;
+        white-space: nowrap;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 1.05em;
+    }
+
+    section {
+        padding: 30px 25px;
+        margin: 30px auto;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    .casos-destaque {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .casos-destaque .caso {
+        width: 45%;
+    }
+
+    .caso-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .imagem {
+        max-width: 45%;
+        width: 100%;
+    }
+
+    .tabela-caso {
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 50px 35px;
+        margin: 35px auto;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .casos-destaque {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .casos-destaque .caso {
+        width: 250px;
+    }
+
+    .caso-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .imagem {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .tabela-caso {
+        font-size: 0.95em;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
